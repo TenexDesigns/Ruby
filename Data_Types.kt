@@ -3,10 +3,9 @@ Heres an explanation of the common data types in Ruby with code samples:
 
 1.Numbers:
 
-Ruby supports integers and floating-point numbers.
+Ruby supports only integers and floating-point numbers.
 Example:
-ruby
-Copy code
+
 age = 25             # Integer
 price = 9.99         # Floating-point number
 
@@ -17,8 +16,7 @@ price = 9.99         # Floating-point number
 
 Strings are sequences of characters enclosed in single quotes (')  ' or double quotes (").
 Example:
-ruby
-Copy code
+
 name = 'John'        # Single-quoted string
 message = "Hello!"   # Double-quoted string
                                                                                        
