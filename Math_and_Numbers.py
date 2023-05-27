@@ -89,11 +89,13 @@ abs: The abs method returns the absolute value of a number. For example, the fol
 Ruby
 Math.abs(-10)
 Use code with caution. Learn more
-ceil: The ceil method returns the smallest integer that is greater than or equal to a number. For example, the following code will return the value 11:
+ceil: The ceil method returns the smallest integer that is greater than or equal to a number. For example,
+  the following code will return the value 11:
 Ruby
 Math.ceil(10.5)
 Use code with caution. Learn more
-floor: The floor method returns the largest integer that is less than or equal to a number. For example, the following code will return the value 10:
+floor: The floor method returns the largest integer that is less than or equal to a number. For example, 
+  the following code will return the value 10:
 Ruby
 Math.floor(10.5)
 Use code with caution. Learn more
@@ -123,7 +125,9 @@ Math.tan(Math::PI / 4)
 Use code with caution. Learn more
 In addition to these methods, the Math class also provides a number of constants, such as PI and E.
 
-Integers and floating-point numbers are two different types of numbers in Ruby. Integers are whole numbers, while floating-point numbers can have decimals. When dividing integers, the result is always an integer. When dividing floating-point numbers, the result is a floating-point number.
+Integers and floating-point numbers are two different types of numbers in Ruby. Integers are whole numbers, 
+while floating-point numbers can have decimals. When dividing integers, the result is always an integer.
+When dividing floating-point numbers, the result is a floating-point number.
 
 For example, the following code will return the value 5:
 
@@ -164,7 +168,39 @@ I hope this helps! Let me know if you have any other questions.
 
 
 
+MORE EXPLANATION
+**************************************************************************************************************************8
 
+
+
+The Math class in Ruby provides various mathematical functions to perform operations on numbers.
+Some of these functions are floor, ceil, round, and sqrt bbminfo.com.
+
+The floor function returns the next lowest integer value by rounding up the value of a floating-point number if necessary. 
+The ceil function returns the smallest integer that is greater than or equal to the given number.
+
+require 'mathn'
+
+puts Math.floor(3.2)  # Output: 3
+puts Math.ceil(3.2)  # Output: 4
+Ruby also has number methods for integers and floating-point numbers freecodecamp.org.
+
+When dividing integers in Ruby, it performs integer division, which truncates the decimal part.
+To perform floating-point division, you can convert one or both operands to floating-point numbers using to_f or
+by adding .0 or .to_f to the integer stackoverflow.com, stackoverflow.com.
+
+puts 8 / 3       # Output: 2 (integer division)
+puts 8.to_f / 3  # Output: 2.67 (floating-point division)
+puts 8 / 3.to_f  # Output: 2.67 (floating-point division)
+puts 8.0 / 3     # Output: 2.67 (floating-point division)
+Another way to perform floating-point division is by using the fdiv method or the Rational class stackoverflow.com.
+
+puts 8.fdiv(3).ceil  # Output: 3
+puts (8 / 3).ceil    # Output: 3
+puts (8 / 3r).ceil   # Output: 3
+In summary, the Math class provides various mathematical functions, such as floor
+and ceil. When dividing integers in Ruby, it performs integer division, but you can use to_f, .0, or .to_f to perform
+floating-point division.
 
 
 
