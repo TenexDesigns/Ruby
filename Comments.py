@@ -50,12 +50,35 @@ Well-commented code can facilitate collaboration and maintenance of the codebase
 
 
 
+MORE Exolanation
+***************************************************************************************************************************************
 
 
 
+In Ruby, comments are used to provide explanations, descriptions, or additional information about the code. 
+There are two types of comments in Ruby: single-line comments and block comments.
 
+Single-line comments start with a hash mark (#) and continue to the end of the line. For example:
 
+# This is a single-line comment
+puts "Hello, world!"
+Block comments, also known as multi-line comments, start with =begin and end with =end. They can span multiple lines. For example:
 
+=begin
+This is a block comment.
+It can span multiple lines.
+=end
+puts "Block comments can be used for longer explanations or descriptions."
+In a program that iterates over an array and displays its contents as an HTML list, you might see comments like this:
+
+sharks = ['hammerhead', 'great white', 'dogfish', 'frilled', 'bullhead', 'requiem']
+# transform each entry in the array to an HTML entity, with leading spaces and a newline.
+listitems = sharks.map { |shark| " <li>#{shark}</li>\n"}
+# Print the opening <ul>, then print the array of list items
+print "<ul>\n#{listitems.join}</ul>"
+In this example, the comments give a general idea of how the program should work and what the output might look like.
+
+For more information and examples, you can refer to the provided sources
 
 
 
