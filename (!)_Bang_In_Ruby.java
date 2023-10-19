@@ -1,3 +1,48 @@
+
+In Ruby, the exclamation mark ! is not just a plain exclamation mark but has a specific meaning when used in
+conjunction with certain methods. These methods are called "bang methods" because they perform an action that 
+modifies the original object, as opposed to other methods that return a new object without changing the original object dev.to.
+
+Bang methods are typically used when you want to make changes to an object and have those changes persist.
+They are often used with built-in Ruby methods that modify collections, such as arrays and hashes.
+
+For example, consider the following array:
+
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 9, 9, 9, 9, 9]
+If you use the uniq method without the bang, it returns a new array with unique elements:
+
+array.uniq
+# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+However, if you use the uniq! method (bang version), it modifies the original array in place:
+
+array.uniq!
+# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Now, when you call the array variable, it will display the unique elements:
+
+array
+# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+The bang methods in Ruby are useful when you want to perform an action that modifies the original object,
+rather than creating a new object and returning it. By using bang methods, you can save memory and improve performance, 
+as you dont need to create new objects for every operation dev.to. However, i's important to use them carefully, 
+as modifying the original object can have unintended consequences if you need to preserve the original data for later use.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************************************************************************
+
+
 In Ruby, the exclamation mark (!) is often referred to as a "bang" operator. 
 It is used in various contexts and has different meanings depending on the situation. 
 Here are some common uses of the bang operator in Ruby:
@@ -64,33 +109,6 @@ in a potentially destructive or irreversible way.
 MORE EXPLANTION
 ******************************************************************************************************************
 
-
-In Ruby, the exclamation mark ! is not just a plain exclamation mark but has a specific meaning when used in
-conjunction with certain methods. These methods are called "bang methods" because they perform an action that 
-modifies the original object, as opposed to other methods that return a new object without changing the original object dev.to.
-
-Bang methods are typically used when you want to make changes to an object and have those changes persist.
-They are often used with built-in Ruby methods that modify collections, such as arrays and hashes.
-
-For example, consider the following array:
-
-array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 9, 9, 9, 9, 9]
-If you use the uniq method without the bang, it returns a new array with unique elements:
-
-array.uniq
-# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-However, if you use the uniq! method (bang version), it modifies the original array in place:
-
-array.uniq!
-# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-Now, when you call the array variable, it will display the unique elements:
-
-array
-# => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-The bang methods in Ruby are useful when you want to perform an action that modifies the original object,
-rather than creating a new object and returning it. By using bang methods, you can save memory and improve performance, 
-as you dont need to create new objects for every operation dev.to. However, i's important to use them carefully, 
-as modifying the original object can have unintended consequences if you need to preserve the original data for later use.
 
 
 
