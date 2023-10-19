@@ -2,7 +2,8 @@ The @sign is like the (this)  method in java script.
 The @ sign is used to create properites for the class method
 
 
-This class now has  proeprties @name and @age, Whos value is received whe we incancetae an aobject of the Person class like here below
+This class now has  proeprties @name and @age, Whos value is received whe we incancetae an aobject of the Person 
+class like here below
 e.g person1 =Person("George",34)
 
 
@@ -23,7 +24,8 @@ end
 More explantion
 *********************************************************************************
 
-In Ruby, the @ symbol is used to denote instance variables within a class. Instance variables are variables that are accessible
+In Ruby, the @ symbol is used to denote instance variables within a class. 
+Instance variables are variables that are accessible
 throughout the class and can hold different values for each instance of the class.
 
 Here are a few key points about instance variables in Ruby:
@@ -74,7 +76,8 @@ them from local variables within a method or block. It allows you to store and a
 More explantion
 *********************************************************************************
 
-In Ruby, the at-sign (@) before a variable name (e.g., @variable_name) is used to create a class instance variable designcise.com.
+In Ruby, the at-sign (@) before a variable name (e.g., @variable_name) is used to create a class instance variable 
+designcise.com.
 Class instance variables are only directly accessible within the class instance methods of the class theyre defined in.
 They are used to store data that is specific to an instance of a class, as opposed to class variables, 
 which are shared among all instances of a class.
