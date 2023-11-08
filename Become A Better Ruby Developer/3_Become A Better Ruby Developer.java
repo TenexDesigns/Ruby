@@ -1,50 +1,41 @@
-JRuby is a high performance, stable, fully threaded Java implementation of the Ruby programming language. It provides the ability to embed the interpreter into any Java application and to run Ruby scripts from Java code. JRuby is tightly integrated with Java to allow the embedding of the interpreter into any Java application with full two-way access between the Java and the Ruby code [Source 11](https://docs.oracle.com/cd/E19776-01/820-4926/chapterone/index.html).
+Improving your skills in Ruby programming involves understanding design patterns and problem-solving techniques specific to the language. Let's explore some of these concepts:
 
-In the context of Rails, JRuby enables concurrent, high-performance execution of Rails applications. You can run your Rails application on JRuby just like you would with the standard Ruby interpreter, MRI. JRuby is compatible with Rails 6 and 7, and allows you to leverage the power of the Java Virtual Machine (JVM) and its mature ecosystem [Source 1](https://wearebrain.com/blog/how-to-run-a-rails-application-on-jruby-or-how-a-rails-application-is-run-inside-war/).
+#### Design Patterns
+Design patterns are solutions to common problems in software design. They represent the best practices used by experienced developers, which can be used to improve the structure and efficiency of your code.
 
-Java comes into play in JRuby in several ways:
+1. **Composite Pattern**: This pattern allows you to compose objects into tree structures and then work with these structures as if they were individual objects. This can be particularly useful when dealing with hierarchical data structures [Source 0](https://refactoring.guru/design-patterns/ruby).
 
-1. JRuby runs on the JVM, which means it can utilize the JVM's advanced features such as Just-In-Time compilation, garbage collection, and threading model.
-2. JRuby can seamlessly integrate with Java libraries and frameworks. You can call Java code from Ruby and vice versa.
-3. JRuby leverages the JVM's robustness and performance optimizations, which can lead to significant performance improvements for Ruby applications.
+2. **Singleton Pattern**: This pattern restricts the instantiation of a class to a single instance. It is used when a class needs to have exactly one instance, no more, no less [Source 8](https://betterprogramming.pub/design-pattern-1-singleton-308c896801d7).
 
-Scaling a Rails application with JRuby can be achieved through:
+3. **Pattern Matching**: Introduced in Ruby 2.7, pattern matching is a feature that can help simplify your code and make it more readable. It allows you to test a value against a pattern and execute code accordingly. Here is an example of how to use pattern matching in Ruby [Source 4](https://www.toptal.com/ruby/ruby-pattern-matching-tutorial):
 
-1. Multithreading: JRuby supports native threads, which means you can run multiple threads in a single JRuby process. This allows for efficient utilization of multi-core processors and can significantly improve the throughput of your Rails application.
-2. JVM optimizations: The JVM has advanced performance optimizations such as Just-In-Time compilation and garbage collection, which can help improve the performance and scalability of your Rails application.
-3. Java Integration: You can leverage the mature Java ecosystem, which includes a wide range of libraries and frameworks for tasks such as caching, messaging, and database access.
+```ruby
+def display_name(name_hash)
+  case name_hash
+  in {username: username}
+    username
+  in {nickname: nickname, realname: {first: first, last: last}}
+    "#{nickname} #{first} #{last}"
+  in {first: first, last: last}
+    "#{first} #{last}"
+  else
+    'New User'
+  end
+end
+```
 
-Migrating to JRuby involves changing your Ruby version to JRuby, resolving any compatibility issues with gems or libraries, and potentially rewriting some parts of your code to take advantage of JRuby's features. The `jruby-lint` gem can be used to check your code for compatibility issues with JRuby [Source 4](https://devcenter.heroku.com/articles/moving-an-existing-rails-app-to-run-on-jruby).
+#### Problem Solving Techniques
+Understanding problem-solving techniques can help you tackle complex problems more effectively.
 
-JRuby's support for true parallelism can allow a Rails application to handle thousands of requests per minute, but the actual throughput will depend on many factors, including the complexity of your application, the performance of your database, and the capacity of your server.
+1. **Backtracking**: This is a general algorithm for finding all solutions to some problems, particularly constraint satisfaction problems. It incrementally builds candidates to the solutions and abandons a candidate ('backtracks') as soon as it determines that the candidate cannot be extended to a valid solution [Source 15](https://reintech.io/blog/solving-complex-problems-with-ruby).
 
-Here's a simple example of how to use JRuby with Rails:
+2. **Divide and Conquer**: This algorithm design paradigm tackles complex problems by recursively breaking them down into smaller subproblems until they become simple enough to solve directly. The solutions to the subproblems are then combined to form the solution to the original problem [Source 15](https://reintech.io/blog/solving-complex-problems-with-ruby).
 
-1. First, install JRuby. You can use a version manager like RVM or rbenv.
-   
-   ```bash
-   rvm install jruby
-   ```
+3. **Coding Challenges**: Solving coding challenges is a great way to improve your Ruby and problem-solving skills. It allows you to focus on solving specific problems, explore interesting language features, and become a better Ruby developer [Source 16](https://www.rubyguides.com/2018/11/coding-challenges/).
 
-2. Set JRuby as the current Ruby version:
-
-   ```bash
-   rvm use jruby
-   ```
-
-3. Create a new Rails application:
-
-   ```bash
-   rails new myapp
-   ```
-
-4. Run the Rails server:
-
-   ```bash
-   rails server
-   ```
-
-In this example, the Rails application will run on JRuby and can take advantage of JRuby's features such as multithreading and Java integration.
+To improve your skills further, consider online tutorials and resources such as Codecademy and FreeCodeCamp which offer comprehensive courses on Ruby [Source 12](https://stackify.com/ruby-tutorials/).
 
 
-  ...
+
+
+//
